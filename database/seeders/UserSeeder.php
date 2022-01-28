@@ -15,9 +15,9 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Admin Sistem Informasi',
-            'email' => 'adminsi@binadarma.ac.id',
-            'password' => bcrypt('adminsiubd')
+            'name' => 'Admin Pendidikan Bahasa Indonesia',
+            'email' => 'adminpbi@binadarma.ac.id',
+            'password' => bcrypt('adminpbiubd')
         ]);
     }
 }
