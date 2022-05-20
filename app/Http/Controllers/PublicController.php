@@ -35,7 +35,7 @@ class PublicController extends Controller
         $profile_kaprodi = ProfileKaprodi::get();
         $latest_news = Announcement::latest()->limit(3)->get();
         $alumnus = Alumnus::latest()->limit(3)->get();
-        $kerja_sama = KerjaSama::get();
+        $kerja_sama = KerjaSama::latest()->limit(3)->get();
 
         return view(
             'new_ui.beranda',
